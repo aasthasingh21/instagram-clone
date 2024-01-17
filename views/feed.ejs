@@ -78,7 +78,7 @@
               <img class="w-full h-full object-cover" src="/images/uploads/<%=elem.user.profileImage %>" alt="">
             </div>
             <h4 class="text-sm"><%= elem.user.username %></h4>
-            <h6 class="text-xs opacity-30"><%= elem.date %></h6>
+            <h6 class="text-xs opacity-30"><%= elem.date.toLocaleString('default', {date: 'long'}) %></h6>
           </div>
           <div class="w-full h-96 mt-4 bg-sky-100 overflow-hidden">
             <img class="w-full h-full object-cover" src="/images/uploads/<%=elem.picture %>" alt="">
